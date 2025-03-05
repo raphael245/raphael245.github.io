@@ -35,7 +35,7 @@ body{
   font-size: 3em;
 }
 
-a{
+.source_poeme{
   text-decoration: none;
   background-color: rgba(90, 184, 116, 0.3);
   padding: 20px;
@@ -43,7 +43,7 @@ a{
   border-radius:44% 56% 39% 61% / 100% 0% 100% 0%;
 }
 
-a:hover{
+.source_poeme:hover{
   text-decoration: underline;
   background-color: rgba(118, 222, 171, 0.3);
 }
