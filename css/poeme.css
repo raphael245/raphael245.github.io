@@ -23,7 +23,7 @@ body{
 .bannière{
   text-align: center;
   background-image: url("../images/leaves.jpg");
-  height: 35vh;
+  height: 15vh;
   width: 100%;
   background-attachment: fixed;
   background-size: cover;
