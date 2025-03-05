@@ -20,10 +20,10 @@ body{
 	}
 }
 
-.banner{
+h1{
   text-align: center;
   background-image: url("css/leaves.jpg");
-  /*padding: 150px;*/
+  padding: 150px;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
