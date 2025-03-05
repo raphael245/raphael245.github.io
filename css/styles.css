@@ -11,7 +11,7 @@
 /* Source: https://www.w3schools.com/howto/howto_css_fixed_menu.asp */
 /* Liens dans la barre de navigation */
 .menu a {
-  float: left;
+  float: right;
   display: block;
   color: #f2f2f2;
   text-align: center;
