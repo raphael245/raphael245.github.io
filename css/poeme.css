@@ -20,37 +20,6 @@ body{
 	}
 }
 
-/* Source: https://www.w3schools.com/howto/howto_css_fixed_menu.asp */
-/* La barre de navigation */
-.menu {
-  overflow: hidden;
-  background-color: #333;
-  position: fixed; 
-  top: 0; 
-  width: 100%; 
-  height: 100px;
-  line-height: 100px;
-}
-
-/* Source: https://www.w3schools.com/howto/howto_css_fixed_menu.asp */
-/* Liens dans la barre de navigation */
-.menu a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Source: https://www.w3schools.com/howto/howto_css_fixed_menu.asp */
-/* Change l'arrière-plan au survol de la souris */
-.menu a:hover {
-  background: #ddd;
-  color: black;
-}
-
-
 .banniere{
   background-image: url("../images/leaves.jpg");
   top: 100px;
@@ -70,6 +39,7 @@ body{
   text-decoration: none;
   background-color: rgba(90, 184, 116, 0.3);
   padding: 20px;
+  margin-top: 5px;
   border:2px solid #047524;
   border-radius:44% 56% 39% 61% / 100% 0% 100% 0%;
 }
