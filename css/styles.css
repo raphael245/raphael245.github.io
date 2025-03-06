@@ -27,6 +27,12 @@ header{
   transition: 0.3s ease;
 }
 
+/*Source: https://www.youtube.com/watch?v=Dtb3DdSvYRY*/
+.menu a:hover{
+  color: orangered;
+  border-bottom: 3px solid orangered;
+}
+
 .poem_body{
   font-family: Comic Sans MS;
   text-align: center;
@@ -76,9 +82,4 @@ header{
 .source_poeme:hover{
   text-decoration: underline;
   background-color: rgba(118, 222, 171, 0.3);
-
-/*Source: https://www.youtube.com/watch?v=Dtb3DdSvYRY*/
-.menu a:hover{
-  color: orangered;
-  border-bottom: 3px solid orangered;
 }
