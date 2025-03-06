@@ -53,10 +53,11 @@ body{
 .banniere{
   background-image: url("../images/leaves.jpg");
   top: 100px;
-  background-attachment: fixed;
+  position: fixed;
   background-size: cover;
   background-position: center;
   height: 100vh;
+  width: 100%;
   opacity:0.8;
   text-shadow: 6px 4px 6px #000000;
   font-family: "Lobster", sans-serif;
