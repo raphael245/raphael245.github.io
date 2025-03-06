@@ -27,6 +27,56 @@ header{
   transition: 0.3s ease;
 }
 
+.poem_body{
+  font-family: Comic Sans MS;
+  text-align: center;
+/*Source: https://codepen.io/P1N2O/pen/pyBNzX*/
+  background: linear-gradient(135deg, #FFFFFF, #BDFFF3, #4AC29A, #D7FAB4);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+/* Source: https://codepen.io/P1N2O/pen/pyBNzX*/
+@keyframes gradient{
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.banniere{
+  text-align: center;
+  background-image: url("../images/leaves.jpg");
+  padding: 100px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  opacity:0.8;
+  text-shadow: 6px 4px 6px #000000;
+  font-family: "Lobster", sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+}
+
+.source_poeme{
+  text-decoration: none;
+  background-color: rgba(90, 184, 116, 0.3);
+  padding: 20px;
+  margin-top: 5px;
+  border:2px solid #047524;
+/* Source: https://9elements.github.io/fancy-border-radius/ */
+  border-radius:44% 56% 39% 61% / 100% 0% 100% 0%;
+}
+
+.source_poeme:hover{
+  text-decoration: underline;
+  background-color: rgba(118, 222, 171, 0.3);
+
 /*Source: https://www.youtube.com/watch?v=Dtb3DdSvYRY*/
 .menu a:hover{
   color: orangered;
