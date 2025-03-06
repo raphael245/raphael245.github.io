@@ -41,6 +41,7 @@ body{
   padding: 20px;
   margin-top: 5px;
   border:2px solid #047524;
+/* Source: https://9elements.github.io/fancy-border-radius/ */
   border-radius:44% 56% 39% 61% / 100% 0% 100% 0%;
 }
 
