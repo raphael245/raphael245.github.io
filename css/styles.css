@@ -46,7 +46,6 @@ nav a:hover{
   height: 40vh;
   background-size: cover;
   background-position: center;
-  object-fit: fill;
   position: relative;
   top:0;
 }
@@ -79,20 +78,6 @@ nav a:hover{
 	100% {
 		background-position: 0% 50%;
 	}
-}
-
-.banniere{
-  text-align: center;
-  background-image: url("../images/leaves.jpg");
-  padding: 100px;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  opacity:0.8;
-  text-shadow: 6px 4px 6px #000000;
-  font-family: "Lobster", sans-serif;
-  font-weight: 300;
-  font-size: 2em;
 }
 
 .source_poeme{
