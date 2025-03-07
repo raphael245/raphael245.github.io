@@ -53,6 +53,7 @@ nav a:hover{
 .banniere h1{
   font-family: "Lobster", sans-serif;
   font-size: 80px;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
   left:34%;
   top: 20%;
   position: absolute;
