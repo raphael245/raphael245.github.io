@@ -94,6 +94,17 @@ nav a:hover{
   border-radius:44% 56% 39% 61% / 100% 0% 100% 0%;
 }
 
+.poem_box{
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20%;
+  margin-right:20%;
+  padding: 20px;
+  border: 3px solid black;
+  border-radius: 20px;
+}
+
 .source_poeme:hover{
   text-decoration: underline;
   background-color: rgba(118, 222, 171, 0.3);
