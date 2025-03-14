@@ -64,7 +64,7 @@ nav a:hover{
   font-style: normal;
   font-size: 80px;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
-  -webkit-text-stroke: 0.1px white; /* Source: https://stackoverflow.com/questions/2570972/css-font-border*/
+  -webkit-text-stroke: 1px white; /* Source: https://stackoverflow.com/questions/2570972/css-font-border*/
 }
 
 .poem_body{
@@ -129,5 +129,5 @@ nav a:hover{
   font-style: normal;
   font-size: 80px;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
-  -webkit-text-stroke: 0.1px white; /* Source: https://stackoverflow.com/questions/2570972/css-font-border*/
+  -webkit-text-stroke: 1px white; /* Source: https://stackoverflow.com/questions/2570972/css-font-border*/
 }
