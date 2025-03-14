@@ -70,7 +70,7 @@ nav a:hover{
   font-family: Comic Sans MS;
   text-align: center;
 /*Source: https://codepen.io/P1N2O/pen/pyBNzX*/
-  background: linear-gradient(135deg, #011425, #1F4959, #5C7C89, #FFFFFF);
+  background: linear-gradient(135deg, #1F4959, #5C7C89, #FFFFFF);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
 }
