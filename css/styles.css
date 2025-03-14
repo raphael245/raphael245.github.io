@@ -59,7 +59,9 @@ nav a:hover{
 }
 
 .banniere_poeme h1{
-  font-family: "Lobster", sans-serif;
+  font-family: "Spicy Rice", serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 80px;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
   -webkit-text-stroke: 0.1px white; /* Source: https://stackoverflow.com/questions/2570972/css-font-border*/
@@ -122,7 +124,9 @@ nav a:hover{
 }
 
 .banniere_voyage h1{
-  font-family: "Lobster", sans-serif;
+  font-family: "Spicy Rice", serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 80px;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
   -webkit-text-stroke: 0.1px white; /* Source: https://stackoverflow.com/questions/2570972/css-font-border*/
