@@ -47,9 +47,9 @@ nav a.active{
 }
 
 .banniere_poeme{
-  background: url("../images/leaves (2).jpg");
+  background: url("https://cdn.britannica.com/26/152026-050-41D137DE/Sunshine-leaves-beech-tree.jpg");
   width: 100%;
-  height: 45vh;
+  height: 50vh;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -124,7 +124,7 @@ nav a.active{
 .banniere_voyage{
   background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/All_Gizah_Pyramids.jpg/1200px-All_Gizah_Pyramids.jpg");
   width: 100%;
-  height: 45vh;
+  height: 50vh;
   background-size: cover;
   background-position: center;
   position: relative;
@@ -145,7 +145,7 @@ nav a.active{
 
 .desc_titre{
   position: relative;
-  width: 275px;
+  width: 375px;
   border: 2px solid #00ABF0;
   border-radius: 15px 15px 0 0;
   z-index: 2;
@@ -159,4 +159,90 @@ nav a.active{
   border-radius: 0 15px 15px 15px;
   padding: 10px;
   z-index: 1;
+}
+
+/*Source: https://www.sliderrevolution.com/resources/css-border-animation/*/
+.boite{
+  margin: 20px;
+  margin-bottom: 70px;
+  width:400px;
+  padding: 20px;
+  border: 3px solid #00ABF0;
+  border-radius: 20px;
+  position: relative;
+  background: linear-gradient(0deg, #000, #272727);
+}
+
+/*Source: https://www.sliderrevolution.com/resources/css-border-animation/*/
+.boite:before, .boite:after {
+  content: '';
+  position: absolute;
+  border-radius: 20px;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(45deg, #0000ff, #00eeff, transparent, #0000ff, #00eeff, transparent);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+
+/*Source: https://www.sliderrevolution.com/resources/css-border-animation/*/
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/*Source: https://www.sliderrevolution.com/resources/css-border-animation/*/
+.boite:after {
+  filter: blur(50px);
+}
+
+.reserve a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #00ABF0;
+  background-color: transparent;
+  width: 125px;
+  padding: 10px;
+  border:2px solid #00ABF0;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.reserve a:hover{
+  background-color: #00ABF0;
+  color: #081B29;
+}
+
+.banniere_biographie{
+  background: url("https://static.vecteezy.com/ti/photos-gratuite/p2/2307019-cahier-vide-et-stylo-sur-le-bureau-gratuit-photo.jpg");
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+}
+
+.banniere_biographie h1{
+  font-family: "Spicy Rice", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 90px;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+  -webkit-text-stroke: 2px white; /* Source: https://stackoverflow.com/questions/2570972/css-font-border*/
 }
