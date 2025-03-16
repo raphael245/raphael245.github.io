@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="scroll-behavior: smooth;"> <!--Source: https://www.w3schools.com/HOWTO/howto_css_smooth_scroll.asp-->
   <head>
     <meta charset="UTF-8">
     <title>Voyage</title>
@@ -15,6 +15,42 @@
       body{
         background-color: #081B29;
         color: #FFFFFF;
+      }
+      
+      h2{
+        font-size: 2rem;
+      }
+      
+      h3{
+        font-size: 1.5rem;
+      }
+      
+      li a{
+        font-size: 18px;
+        text-decoration: none;
+        color: white;
+        transition: 0.3s;
+      }
+      
+      li a:hover{
+        color: #00ABF0;
+      }
+      
+      ul{
+        text-align: left;
+      }
+      
+      table{
+        margin-bottom: 45px;
+        width: 75%;
+      }
+      
+      td{
+        border-left: 20px solid #081B29;
+      }
+      
+      b{
+        font-weight: 900;
       }
     </style>
   </head>
@@ -32,53 +68,250 @@
       </div>
     </header>
     
+    <!--Bannière pour cette page web-->
     <div class="banniere_voyage">
       <h1 style="color: black;">Voyage</h1>
     </div>
     
     <main>
-      <div class="desc_titre">
-        <h2 style="text-align: center;">
-          Égypte - Description
-        </h2>
-      </div>
-      
-      <!-- Source: https://www.presidency.eg/fr/%D9%85%D8%B5%D8%B1/%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%AD%D8%A9-%D9%81%D9%8A-%D9%85%D8%B5%D8%B1/ -->
-      <div class="desc">
-        <p>
-          L'Égypte est la mère du monde, c'est une destination que les 
-          touristes du monde entier visitent, et comprend de nombreuses 
-          attractions touristiques et historiques uniques, ainsi que des trésors 
-          archéologiques et anciens, qui ont longtemps été la marque de 
-          fabrique de l'Égypte, où de nombreux touristes viennent visiter pour 
-          découvrir les pyramides et le Sphinx, en plus des vestiges de la 
-          civilisation Égyptienne antique, qui reflète l'histoire islamique, copte, 
-          romaine, grecque et pharaonique.
-        </p>
-      </div>
-      
-      
-      <h2>
-        Sites à voir
-      </h2>
-      
-      <ul>
-        <li>Les pyramides de Gizeh</li>
-        <li>Khan El Khalili</li>
-        <li>Musée national de la civilisation égyptienne</li>
-        <li>Sharm el-Sheikh</li>
-      </ul>
-      
-      <h2>
-        Mets populaires
-      </h2>
-      
-      <ul>
-        <li>Le Ful Medames</li>
-        <li>Koshari</li>
-        <li>Mahshi</li>
-        <li>Knafeh</li>
-      </ul>
+
+      <!--Cette section est une description de l'Égypte-->
+      <section>
+        <div class="desc_titre">
+          <h2 style="text-align: center;">
+            Égypte - Description
+          </h2>
+        </div>
+        
+        <!--Source pour le contenu: https://www.presidency.eg/fr/%D9%85%D8%B5%D8%B1/%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%AD%D8%A9-%D9%81%D9%8A-%D9%85%D8%B5%D8%B1/-->
+        <div class="desc">
+          <p>
+            L'Égypte est la mère du monde, c'est une destination que les 
+            touristes du monde entier visitent, et comprend de nombreuses 
+            attractions touristiques et historiques uniques, ainsi que des trésors 
+            archéologiques et anciens, qui ont longtemps été la marque de 
+            fabrique de l'Égypte, où de nombreux touristes viennent visiter pour 
+            découvrir les pyramides et le Sphinx, en plus des vestiges de la 
+            civilisation Égyptienne antique, qui reflète l'histoire islamique, copte, 
+            romaine, grecque et pharaonique.
+          </p>
+        </div>
+      </section>
+
+      <center>
+        <!--Cette section énumère les sites à visiter en Égypte-->
+        <section>
+          <h2>
+            Sites à voir
+          </h2>
+          
+          <div class="boite">
+            <ul>
+              <li><a href="#pyramides">Les pyramides de Gizeh</a></li>
+              <li><a href="#khan">Khan El Khalili</a></li>
+              <li><a href="#musee">Musée national de la civilisation égyptienne</a></li>
+              <li><a href="#sharm">Sharm el-Sheikh</a></li>
+            </ul>
+          </div>
+        </section> 
+        
+        <!--Cette section décrit les pyramides de Gizeh-->
+        <section> 
+          <!-- Source pour la propriété «scroll-margin-top» : https://www.w3schools.com/cssref/css_pr_scroll-margin-top.php -->
+          <a id="pyramides" style="scroll-margin-top: 110px;">
+            <h3>Les pyramides de Gizeh</h3>
+          </a>
+          <table>
+            <tr>
+              <td width="50%">
+                <img src="https://static.nationalgeographic.fr/files/styles/image_3200/public/giza-plateau-pyramids.jpg?w=1600&h=1067" alt="Pyramides de Gizeh" style="width: 100%;"/>
+              </td>
+              <!--Source de l'information: https://www.egypte.fr/pyramides-gizeh-->
+              <td valign="middle" align="left">
+                Situées sur le plateau de Gizeh, à 18 kilomètres du Caire, 
+                les pyramides sont les monuments les plus visités d’Égypte, 
+                mais aussi <b>les plus anciens du monde</b>. Il s'agit de constructions 
+                funéraires, construites sous les ordres de pharaons de différentes dynasties.<br><br>
+                Les trois pyramides les plus importantes sont <i>Khéops</i>, <i>Khéphren</i> et <i>Mykérinos</i>. <br><br>
+                Si vous voulez faire <b>l'excursion aux Pyramides</b> depuis Le Caire, vous pourrez faire
+                la réservation en cliquant sur le bouton ci-après. <br><br><br>
+                <div class="reserve">
+                  <a href="https://www.egypte.fr/activites/le-caire/excursion-gizeh-memphis-saqqarah" target="_blank">Réserver</a>
+                </div>
+              </td>
+            </tr>
+          </table>
+        </section>
+        
+        <!--Cette section décrit le bazar de Khan El Khalili-->
+        <section>   
+          <a id="khan" style="scroll-margin-top: 110px;">
+            <h3>Khan El Khalili</h3>
+          </a>
+          <table>
+            <tr>
+              <!--Source de l'information: https://www.egypte.fr/khan-el-khalili-->
+              <td valign="middle" align="right">
+                Khan El Khalili, ou Jan El Jalili, est <b>le plus célèbre marché d'Égypte et du Moyen-Orient</b>. 
+                Son origine remonte à 1382, lorsque le sultan mamelouk Djaharks el-Jalili a décidé de construire 
+                un lieu de repos pour les marchands sur les ruines d'un ancien cimetière fatimide.<br><br>
+                Vous pouvez acheter des lampes colorées, des tissus, des objets d'artisanat, des bijoux, des épices, 
+                des parfums, des instruments de musique et bien sûr des souvenirs et des cadeaux égyptiens.<br><br>
+                Le bazar de Khan el Khalili est <b>parfait</b> pour passer <b>une nuit différente dans la ville</b>.
+              </td>
+              <td width="50%">
+                <img src="https://ucarecdn.com/bb6c81b3-7f35-4e36-8b9e-4049a0e1fc64/-/crop/678x381/0,65/-/preview/" alt="Khan El Khalili" style="width: 100%;"/>
+              </td>
+            </tr>
+          </table>
+        </section> 
+        
+        <!--Cette section décrit le musée national de la civilisation égyptienne-->
+        <section> 
+          <a id="musee" style="scroll-margin-top: 110px;">
+            <h3>Musée national de la civilisation égyptienne</h3>
+          </a>
+          <table>
+            <tr>
+              <td width="50%">
+                <img src="https://sis.gov.eg/Content/Upload/slider/62023362558449.jpg" alt="Musée national de la civilisation égyptienne" class="image" style="width: 100%;"/>
+              </td>
+              <!--Source de l'information: https://fr.wikipedia.org/wiki/Mus%C3%A9e_national_de_la_civilisation_%C3%A9gyptienne-->
+              <td valign="middle" align="left">
+                Le <b>musée national de la civilisation égyptienne (NMEC)</b> est un grand musée dans l’ancienne ville de Fostat, 
+                qui fait maintenant partie du Caire, en Égypte. Le musée présente une collection de <b>50 000 objets</b>, présentant
+                la civilisation égyptienne de la préhistoire à nos jours.<br><br>
+                La collection permanente est divisée en deux zones distinctes, l’une chronologique l’autre thématique.<br><br>
+                Les collections proviennent d'autres musées égyptiens tels que le <i>musée égyptien</i>, le <i>musée copte</i>, le <i>musée d'art 
+                islamique</i>, le <i>palais et musée Manial</i> au Caire et le <i>musée royal de la joaillerie d'Alexandrie</i>.
+              </td>
+            </tr>
+          </table>
+        </section>
+        
+        <!--Cette section décrit Sharm el-Sheikh-->
+        <section> 
+          <a id="sharm" style="scroll-margin-top: 110px;">
+            <h3>Sharm el-Sheikh</h3>
+          </a>
+          <table>
+            <tr>
+              <!--Source de l'information: https://partir.ouest-france.fr/magazine/sharm-el-sheikh-plongee-au-coeur-de-legypte/#:~:text=Sharm%20el%2DSheikh%20est%20une,arides%20et%20des%20eaux%20turquoises.-->
+              <td valign="middle" align="right">
+                Sharm el-Sheikh est une ville portuaire d’Égypte d’environ 75 000 habitants située à la 
+                pointe sud de la péninsule du Sinaï, sur la Mer Rouge et à l’entrée du Golfe d’Aqaba.<br><br>
+                Depuis longtemps on y vient pour les <b>superbes plages</b>, les <b>balades dans le désert</b> tout proche
+                et surtout <b>la plongée et le snorkeling</b> qui bénéficient ici d’une réputation mondiale notamment avec 
+                le parc national marin Ras Mohammed et ses fonds coralliens aux portes de la ville.
+              </td>
+              <td width="50%">
+                <img src="https://mediaim.expedia.com/destination/1/944d610146b9f28ad3ed349ad09f2fd1.jpg?impolicy=fcrop&w=450&h=280&q=medium" alt="Sharm el-Sheikh" style="width: 100%;"/>
+              </td>
+            </tr>
+          </table>
+        </section>
+        
+        <!--Cette section énumère les mets populaires en Égypte-->
+        <section>
+          <h2>
+            Mets populaires
+          </h2>
+            
+          <!--Source pour le contenu: https://www.windsorsuiteshotel.com/cuisine-du-monde/10-plats-typiques-gastronomie-egypte/-->
+          <div class="boite" style="width: 300px;">
+            <ul>
+              <li><a href="#ful">Le Ful Medames</a></li>
+              <li><a href="#koshari">Koshari</a></li>
+              <li><a href="#mahshi">Mahshi</a></li>
+              <li><a href="#knafeh">Knafeh</a></li>
+            </ul>
+          </div>
+        </section>
+        
+        <!--Cette section décrit le ful medames-->
+        <section>  
+          <a id="ful" style="scroll-margin-top: 110px;">
+            <h3>Le Ful Medames</h3>
+          </a>
+          <table>
+            <tr>
+              <td width="50%">
+                <img src="https://www.windsorsuiteshotel.com/wp-content/uploads/2024/02/ful-medames-egypte.jpg" alt="Le Ful Medames" style="width: 100%;"/>
+              </td>
+              <!--Source de l'information: https://www.windsorsuiteshotel.com/cuisine-du-monde/10-plats-typiques-gastronomie-egypte/-->
+              <td valign="middle" align="left">
+                C’est probablement le plat national, un stimulant énergétique qu’il faut goûter au moins une fois 
+                (il est généralement consommé au petit-déjeuner).<br><br>
+                Les fèves (ful) sont l’ingrédient principal du plat.
+                Elles sont cuites dans une cocotte en cuivre avec une sauce à l’ail, après avoir été légèrement
+                écrasées, et servies avec un bon filet d’huile d’olive, du persil, des oignons et du citron.
+                Il n’est pas rare qu’elles soient servies avec du pain pita.
+              </td>
+            </tr>
+          </table>
+        </section> 
+        
+        <!--Cette section décrit le koshari-->
+        <section>    
+          <a id="koshari" style="scroll-margin-top: 110px;">
+            <h3>Koshari</h3>
+          </a>
+          <table>
+            <tr>
+              <!--Source de l'information: https://www.windsorsuiteshotel.com/cuisine-du-monde/10-plats-typiques-gastronomie-egypte/-->
+              <td valign="middle" align="right">
+                Un autre plat végétarien préparé avec une grande variété d’ingrédients : 
+                pâtes, sauce tomate, riz, oignon caramélisé, ail, lentilles, pois chiches… 
+                C’est un mélange curieux et délicieux qu’il faut absolument goûter lors de votre voyage en Égypte.
+              </td>
+              <td width="50%">
+                <img src="https://www.windsorsuiteshotel.com/wp-content/uploads/2024/02/koshari-egypte.jpg" alt="Koshari" style="width: 100%;"/>
+              </td>
+            </tr>
+          </table>
+        </section> 
+        
+        <!--Cette section décrit le mahshi-->
+        <section>   
+          <a id="mahshi" style="scroll-margin-top: 110px;">
+            <h3>Mahshi</h3>
+          </a>
+          <table>
+            <tr>
+              <td width="50%">
+                <img src="https://www.windsorsuiteshotel.com/wp-content/uploads/2024/02/mahshi-egypte.jpg" alt="Mahshi" style="width: 100%;"/>
+              </td>
+              <!--Source de l'information: https://www.windsorsuiteshotel.com/cuisine-du-monde/10-plats-typiques-gastronomie-egypte/-->
+              <td valign="middle" align="left">
+                Un autre plat idéal pour les voyageurs végétariens. Il se compose essentiellement de 
+                légumes cuits au four, généralement des poivrons, des courgettes ou des aubergines, farcis de 
+                riz mélangé à des herbes aromatiques (persil, coriandre…). Il est accompagné d’une sauce tomate.
+              </td>
+            </tr>
+          </table>
+        </section>
+        
+        <!--Cette section décrit le knafeh-->
+        <section>    
+          <a id="knafeh" style="scroll-margin-top: 110px;">
+            <h3>Knafeh</h3>
+          </a>
+          <table>
+            <tr>
+              <!--Source de l'information: https://www.windsorsuiteshotel.com/cuisine-du-monde/10-plats-typiques-gastronomie-egypte/-->
+              <td valign="middle" align="right">
+                Voici un dessert qui est recommandé de goûter en Égypte. Le kanefeh est un
+                gâteau composé de nouilles de semoule, semblables à des cheveux d’ange, qui sont 
+                roulées et aplaties et cuites à feu doux avec du beurre et un fromage crémeux. 
+                Une fois prêt, il est trempé dans du sirop et agrémenté de quelques noix moulues.
+              </td>
+              <td width="50%">
+                <img src="https://www.windsorsuiteshotel.com/wp-content/uploads/2024/02/knafeh-egypte.jpg" alt="Knafeh" style="width: 100%;"/>
+              </td>
+            </tr>
+          </table>
+        </section>
+      </center>
     </main>
   </body>
 </html>
