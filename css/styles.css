@@ -46,6 +46,29 @@ nav a.active{
   color: #00ABF0;
 }
 
+.bienvenue{
+  background-image: url("https://t3.ftcdn.net/jpg/03/53/28/08/360_F_353280884_oyeOLzk0EyvfC4pvixbvcfA4s745SaX6.jpg");
+  color: #FFFFFF;
+  width: 100%;
+  height: 83vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  top: 0;
+}
+
+.bonjour{
+  font-size: 50px;
+}
+
+.raphael{
+  font-size: 50px;
+  color: #00ABF0;
+}
+
 /*Source: https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/8061410-decouvrez-les-bases-de-css-grids*/
 .grid_contenant{
   display: grid;
