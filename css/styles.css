@@ -46,6 +46,20 @@ nav a.active{
   color: #00ABF0;
 }
 
+/*Source: https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/8061410-decouvrez-les-bases-de-css-grids*/
+.grid_contenant{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px
+}
+
+.texte{
+  background-color: #c5f3fa;
+  border-radius: 0 0 10px 10px;
+  padding: 10px;
+  min-height: 125px; /*Source: https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/8061510-utilisez-le-responsive-design-avec-les-media-queries*/
+}
+
 .banniere_poeme{
   background: url("../images/leaves.jpg");
   width: 100%;
