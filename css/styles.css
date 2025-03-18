@@ -138,6 +138,7 @@ nav a.active{
   border-radius: 20px;
 }
 
+/*Style pour le bouton pour qui mène à la page web du poème*/
 .source_poeme a{
   display: flex;
   justify-content: center;
@@ -153,11 +154,13 @@ nav a.active{
   border-radius:44% 56% 39% 61% / 100% 0% 100% 0%;
 }
 
+/*Au survol de la souris: style pour le bouton pour qui mène à la page web du poème*/
 .source_poeme a:hover{
   color: #081B29;
   background-color: #00ABF0;
 }
 
+/*Style pour la bannière sur la page du voyage*/
 .banniere_voyage{
   background: url("../images/All_Gizah_Pyramids.jpg");
   width: 100%;
@@ -171,6 +174,7 @@ nav a.active{
   top: 0;
 }
 
+/*Style du titre sur la bannière de la page du voyage*/
 .banniere_voyage h1{
   font-family: "Spicy Rice", serif;
   font-weight: 400;
@@ -180,6 +184,7 @@ nav a.active{
   -webkit-text-stroke: 2px white; /* Source: https://stackoverflow.com/questions/2570972/css-font-border*/
 }
 
+/*Style pour la boîte qui entoure le titre de la section «description de l'Égypte»*/
 .desc_titre{
   position: relative;
   width: 375px;
@@ -190,6 +195,7 @@ nav a.active{
   background-color: #081b29;
 }
 
+/*Style de la boîte qui entoure la description de l'Égypte*/
 .desc{
   position: relative;
   border: 2px solid #00ABF0;
@@ -198,6 +204,8 @@ nav a.active{
   z-index: 1;
 }
 
+/*Les 4 prochains sélecteurs donne le style et l'animation aux boîtes qui contiennent 
+les listes pour les sites à voir et les mets populaires en Égypte*/
 /*Source: https://www.sliderrevolution.com/resources/css-border-animation/*/
 .boite{
   margin: 20px;
@@ -243,6 +251,7 @@ nav a.active{
   filter: blur(50px);
 }
 
+/*Style pour le bouton qui permet de réserver une excursion aux pyramides*/
 .reserve a{
   display: flex;
   justify-content: center;
@@ -257,11 +266,13 @@ nav a.active{
   transition: 0.3s;
 }
 
+/*Au survol de la souris: style pour le bouton qui permet de réserver une excursion aux pyramides*/
 .reserve a:hover{
   background-color: #00ABF0;
   color: #081B29;
 }
 
+/*Style pour la bannière sur la page de la biographie*/
 .banniere_biographie{
   background: url("../images/biographie.jpg");
   width: 100%;
@@ -275,6 +286,7 @@ nav a.active{
   top: 0;
 }
 
+/*Style du titre sur la bannière de la page de la biographie*/
 .banniere_biographie h1{
   font-family: "Spicy Rice", serif;
   font-weight: 400;
@@ -284,10 +296,12 @@ nav a.active{
   -webkit-text-stroke: 2px white; /* Source: https://stackoverflow.com/questions/2570972/css-font-border*/
 }
 
+/*Style pour le menu avec les liens internes sur la page de la biographie*/
 .menu_interne {
   width: 350px;
 }
 
+/*Style des liens dans ce menu*/
 /*Source d'inspiration: https://www.w3schools.com/howto/howto_css_vertical_menu.asp*/
 .menu_interne a {
   color: #081B29;
@@ -298,12 +312,14 @@ nav a.active{
   transition: 0.3s;
 }
 
+/*Au survol de la souris: style des liens dans ce menu*/
 .menu_interne a:hover {
   background-color: #081B29;
   color: #00ABF0;
   border: 1px solid #00ABF0;
 }
 
+/*Style pour la section «À propos» sur la page de la biographie*/
 .a_propos{
   display: grid;
   grid-template-columns: 1fr 2.5fr;
