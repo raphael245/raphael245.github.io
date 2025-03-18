@@ -16,6 +16,7 @@ body{
   margin: 0 auto;
 }
 
+/*Style pour l'en-tête des pages*/
 /*Source d'inspiration: https://www.youtube.com/watch?v=lnxrLw4nEyM*/
 header{
   height: 100px;
@@ -27,12 +28,14 @@ header{
   z-index:12;
 }
 
+/*Style pour le menu de navigation*/
 /*Source d'inspiration: https://www.youtube.com/watch?v=lnxrLw4nEyM*/
 nav{
   float:left;
   line-height: 100px;
 }
 
+/*Style pour les liens dans le menu de navigation*/
 /*Source d'inspiration: https://www.youtube.com/watch?v=lnxrLw4nEyM*/
 nav a{
   text-decoration: none;
@@ -43,6 +46,7 @@ nav a{
   font-weight: 500;
 }
 
+/*Style pour les liens dans le menu de navigation au survol de la souris*/
 /*Source d'inspiration: https://www.youtube.com/watch?v=Dtb3DdSvYRY*/ 
 nav a:hover,
 nav a.active{
@@ -50,6 +54,7 @@ nav a.active{
   color: #00ABF0;
 }
 
+/*Style pour la bannière sur la page d'accueil*/
 .bienvenue{
   background-image: url("https://t3.ftcdn.net/jpg/03/53/28/08/360_F_353280884_oyeOLzk0EyvfC4pvixbvcfA4s745SaX6.jpg");
   color: #FFFFFF;
