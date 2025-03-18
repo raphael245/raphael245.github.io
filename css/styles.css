@@ -9,6 +9,8 @@ body{
   margin: 0px;
 }
 
+/*Style du contenant pour la barre de navigation*/
+/*Source d'inspiration: https://www.youtube.com/watch?v=lnxrLw4nEyM*/
 .contenant{
   width: 95%;
   margin: 0 auto;
