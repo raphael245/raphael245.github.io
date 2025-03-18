@@ -1,6 +1,4 @@
 *{
-  /*padding: 0;*/
-  /*margin: 0;*/
   font-family: Comic Sans MS;
 }
 
@@ -14,7 +12,7 @@ body{
   margin: 0 auto;
 }
 
-/*https://www.youtube.com/watch?v=lnxrLw4nEyM*/
+/*Source d'inspiration: https://www.youtube.com/watch?v=lnxrLw4nEyM*/
 header{
   height: 100px;
   width: 100%;
@@ -25,11 +23,13 @@ header{
   z-index:12;
 }
 
+/*Source d'inspiration: https://www.youtube.com/watch?v=lnxrLw4nEyM*/
 nav{
   float:left;
   line-height: 100px;
 }
 
+/*Source d'inspiration: https://www.youtube.com/watch?v=lnxrLw4nEyM*/
 nav a{
   text-decoration: none;
   font-size: 20px;
@@ -109,24 +109,7 @@ nav a.active{
   font-family: Comic Sans MS;
   text-align: center;
   background-color: #081B29;
-/*Source: https://codepen.io/P1N2O/pen/pyBNzX*/
-  /*background: linear-gradient(135deg, #1F4959, #5C7C89, #FFFFFF);*/
-  /*background-size: 400% 400%;*/
-  /*animation: gradient 15s ease infinite;*/
 }
-
-/* Source: https://codepen.io/P1N2O/pen/pyBNzX*/
-/*@keyframes gradient{*/
-	/*0% {*/
-		/*background-position: 0% 50%;*/
-	/*}*/
-	/*50% {*/
-		/*background-position: 100% 50%;*/
-	/*}*/
-	/*100% {*/
-		/*background-position: 0% 50%;*/
-	/*}*/
-/*}*/
 
 .source_poeme a{
   display: flex;
@@ -282,4 +265,43 @@ nav a.active{
   font-size: 90px;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
   -webkit-text-stroke: 2px white; /* Source: https://stackoverflow.com/questions/2570972/css-font-border*/
+}
+
+.menu_interne {
+  width: 350px;
+}
+
+/*Source d'inspiration: https://www.w3schools.com/howto/howto_css_vertical_menu.asp*/
+.menu_interne a {
+  color: #081B29;
+  background-color: #00ABF0;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.menu_interne a:hover {
+  background-color: #081B29;
+  color: #00ABF0;
+  border: 1px solid #00ABF0;
+}
+
+.a_propos{
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+}
+
+.img_moi{
+  border-radius: 50%;
+  background: linear-gradient(#00ABF0, #1804c9);
+}
+
+/*Source: https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/8061410-decouvrez-les-bases-de-css-grids*/
+.liens{
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  gap: 80px;
+  justify-content: center; 
+  position: relative;
 }
