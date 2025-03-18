@@ -325,11 +325,13 @@ les listes pour les sites à voir et les mets populaires en Égypte*/
   grid-template-columns: 1fr 2.5fr;
 }
 
+/*Style pour l'image qui me représente sur la page de la biographie*/
 .img_moi{
   border-radius: 50%;
   background: linear-gradient(#00ABF0, #1804c9);
 }
 
+/*Style pour mes liens préférés sur la page de la biographie*/
 /*Source: https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/8061410-decouvrez-les-bases-de-css-grids*/
 .liens{
   display: grid;
