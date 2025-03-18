@@ -1,1 +1,199 @@
+<!DOCTYPE html>
+<html style="scroll-behavior: smooth;"> <!--Source: https://www.w3schools.com/HOWTO/howto_css_smooth_scroll.asp-->
+  <head>
+    <meta charset="UTF-8">
+    <title>Biographie</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+    <style>
+      main{
+        margin: 40px;
+      }
+      
+      body{
+        background-color: #081B29;
+        color: #FFFFFF;
+      }
+      
+      h2{
+        font-size: 2rem;
+      }
+      
+      .img_liens{
+        transition: 0.3s;
+      }
+      
+      .img_liens:hover{
+        opacity: 0.5;
+        transform: scale(1.1);
+      }
+      
+      .image_liens{
+        overflow: hidden;
+      }
+      
+      th, td{
+        border: 2px solid white;
+        padding: 15px;
+      }
+      
+      th{
+        background-color: #04131f;
+      }
+      
+      td{
+        background-color: rgba(56, 62, 84, 0.4);
+      }
+    </style>
+  </head>
 
+  <body>
+    <!--Barre de navigation-->
+    <header>
+      <div class="contenant">
+        <nav>
+          <a href="index.html">Accueil</a>
+          <a href="poeme.html">Poème</a>
+          <a href="voyage.html">Voyage</a>
+          <a href="biographie.html" class="active">Biographie</a>
+        </nav>
+      </div>
+    </header>
+    
+    <!--Bannière pour cette page web-->
+    <div class="banniere_biographie">
+      <h1 style="color: black;">Biographie</h1>
+    </div>
+    
+    <main>
+      <!--Cette section est le menu pour naviguer les sections de la page-->
+      <section style="height: 40vh;">
+        <center>
+          <h3>Cliquez pour sauter à une section précise de la page</h3>
+          <div class="menu_interne">
+            <a href="#a-propos">À propos</a>
+            <a href="#liens-pref">Mes liens préférés</a>
+            <a href="#competences">Mes compétences</a>
+          </div>
+        </center>
+      </section>
+
+      <!--Ceci est la section «À propos»-->
+      <section>
+        <div class="a_propos">
+          <a id="a-propos" style="scroll-margin-top: 110px;">
+            <img src="https://assets.onecompiler.app/43a98jszu/43b3kcbkx/caricature.png" alt="moi" class="img_moi">
+          </a>
+          <div>
+            <h2>À propos</h2>
+            <p>
+              Mon nom est Raphael. Je suis une personne passionné par les mathématiques, les sciences et la technologie.
+              De fait, j'apprécie l'apprentissage constant dans ces domaines pour que je puisse être capable de résoudre 
+              des problèmes complexes, faire de la programmation et beaucoup plus. Je travaille présentement sur plusieurs 
+              projets de codage, dont ce portfolio, créé avec de l'HTML (<i>HyperText Markup Language</i>) et du CSS (<i>Cascading Style Sheets</i>).
+              Pourtant, cela n'est qu'un bref aperçu! Ci-dessous, vous trouverez plus de détails à propos de moi.
+            </p>
+          </div>
+        </div>
+      </section>
+      
+      <!--Ceci est la section pour mes liens préférés-->
+      <section>
+        <center>
+          <a id="liens-pref" style="scroll-margin-top: 110px;">
+            <h2 style="margin-top: 100px;">Mes liens préférés</h2>
+          </a>
+          <div class="liens">
+            <div>
+              <div class="image_liens">
+                <a href="https://www.sporcle.com/" target="_blank"><img src="https://play-lh.googleusercontent.com/sbWLEc3zRNqM72n5Yfj11aLFS5v6nUqPnB1KmjZCYy-f7DyZiPj7Z2ah_WQ02GE3MA=w240-h480-rw" alt="Sporcle" width="100%" class="img_liens"/></a>
+              </div>
+              <div class="mots">
+                <p style="font-size: 20px;"><b>Sporcle</b></p>
+              </div>
+            </div>
+            <div>
+              <div class="image_liens">
+                <a href="https://www.netflix.com/ca/" target="_blank"><img src="https://yt3.googleusercontent.com/CvgBA1ypUZNxOjiCX0l1V2FbAm7oSDPZE4YkMvkpT_4iLXQ3IXWVtBgWnznHxgtcUoj50TXqZA=s900-c-k-c0x00ffffff-no-rj" alt="Netflix" width="100%" class="img_liens"/></a>
+              </div>
+              <div class="mots">
+                <p style="font-size: 20px;"><b>Netflix</b></p>
+              </div>
+            </div>
+            <div>
+              <div class="image_liens">
+                <a href="https://www.onshape.com/en/" target="_blank"><img src="https://play-lh.googleusercontent.com/yAS9WJJnjlCx77RxIvJSssrixhCdUxnBlM3CuPnQpl8QI3Ez19KreBL4xREc1gtmK_Y=w240-h480-rw" alt="Onshape" width="100%" class="img_liens"/></a>
+              </div>
+              <div class="mots">
+                <p style="font-size: 20px;"><b>Onshape</b></p>
+              </div>
+            </div>
+          </div>
+        </center>
+      </section>
+      
+      <!--Cette section est un tableau qui présente mes compétences technologiques-->
+      <section>
+        <center>
+          <a id="competences" style="scroll-margin-top: 110px;">
+            <h2 style="margin-top: 100px;">Mes compétences</h2>
+          </a>
+          <table style="border-collapse: collapse;">
+            <thead>
+              <tr>
+                <th colspan="2">Compétence</th>
+                <th>Niveau</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="5">Langages de programmation</td>
+                <td>HTML</td>
+                <td>Maître</td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>Expert</td>
+              </tr>
+              <tr>
+                <td>JavaScript</td>
+                <td>Débutant</td>
+              </tr>
+              <tr>
+                <td>Python</td>
+                <td>Expert</td>
+              </tr>
+              <tr>
+                <td>C++</td>
+                <td>Débutant</td>
+              </tr>
+              <tr>
+                <td rowspan="5">Logiciels d'application</td>
+                <td>Google Docs</td>
+                <td>Maître</td>
+              </tr>
+              <tr>
+                <td>Photoshop</td>
+                <td>Débutant</td>
+              </tr>
+              <tr>
+                <td>Google Sheets</td>
+                <td>Compétent</td>
+              </tr>
+              <tr>
+                <td>Canva</td>
+                <td>Expert</td>
+              </tr>
+              <tr>
+                <td>iMovie</td>
+                <td>Compétent</td>
+              </tr>
+            </tbody>
+          </table>
+        </center>
+      </section>
+    </main>
+  </body>
+</html>
