@@ -1,7 +1,9 @@
+/*Style pour le site entier*/
 *{
   font-family: Comic Sans MS;
 }
 
+/*Style pour le corps de chaque page web*/
 body{
   padding: 0px;
   margin: 0px;
