@@ -340,3 +340,25 @@ les listes pour les sites à voir et les mets populaires en Égypte*/
   justify-content: center; 
   position: relative;
 }
+
+/*Style pour le bouton pour qui mène à la calculatrice*/
+.source_calc a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #00ABF0;
+  background-color: transparent;
+  width: 140px;
+  padding: 20px;
+  border:2px solid #00ABF0;
+  transition: 0.3s;
+/* Source: https://9elements.github.io/fancy-border-radius/ */
+  border-radius:44% 56% 39% 61% / 100% 0% 100% 0%;
+}
+
+/*Au survol de la souris: style pour le bouton pour qui mène à la calculatrice*/
+.source_calc a:hover{
+  color: #081B29;
+  background-color: #00ABF0;
+}
