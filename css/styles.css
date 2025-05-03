@@ -84,7 +84,7 @@ nav a.active{
 /*Source: https://openclassrooms.com/fr/courses/1603881-apprenez-a-creer-votre-site-web-avec-html5-et-css3/8061410-decouvrez-les-bases-de-css-grids*/
 .grid_contenant{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px
 }
 
