@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Quiz du cours ICS3U</title>
+</head>
+<body>
+  <!-- Quiz du cours ICS3U -->
+  <form>
+    <h1>Quiz du cours ICS3U</h1>
+    <!-- textbox pour le nomm de l'élève -->
+    <label for="txtNom">Nom : </label>
+    <input type="text" id="txtNom">
+    
+    <br><br>
+    
+    <!-- Question 1 -->
+    <label for="langage">1. Quel langange permet de rendre les pages web fonctionnelles ?</label> <br>
+    <input type="radio" name="langage" value="HTML">HTML<br>
+    <input type="radio" name="langage" value="Javascript">Javascript<br>
+    <input type="radio" name="langage" value="CSS">CSS<br><br>
+    
+    <!-- Question 2 -->
+    <label for="chkPeripherique">2. Lesquelles sont uniquement des périphériques d'entrées ?</label><br>
+    <input type="checkbox" id="chkPeripherique" name="peripherique" value="1">Souris<br>
+    <input type="checkbox" id="chkPeripherique" name="peripherique" value="1">Microphone<br>
+    <input type="checkbox" id="chkPeripherique" name="peripherique" value="0">Écran tactile<br>
+    <input type="checkbox" id="chkPeripherique" name="peripherique" value="1">Clavier<br>
+    <input type="checkbox" id="chkPeripherique" name="peripherique" value="0">Imprimante<br><br>
+    
+    <!--Question 3-->
+    <label for="selSE">3. Lequel <b>n'</b>est <b>pas</b> un système d'exploitation (SE) ? </label><br>
+    <select id="selSE">
+      <option value="Windows">Windows</option>
+      <option value="Linux">Linux</option>
+      <option value="Notepad ++">Notepad ++</option>
+      <option value="MacOS">MacOS</option>
+    </select><br><br>
+
+
+    <!-- bouton pour soumettre le formulaire -->
+    <input type="button" id="btnSoumet" onclick="correctionDuQuiz()"  value="Soummetre">
+   
+    <!-- Création d'une section pour l'affichage des résultats -->
+    <div id="divAffiche">
+    </div>
+   
+    <script>
+        function correctionDuQuiz() {
+            //Chercher les données dans le formulaire
+            var nom = document.getElementById("txtNom").value;
+            var affiche = document.getElementById("divAffiche");
+            
+            //Pour déterminer lequel des radio buttons est coché
+            var radiosLangage = document.getElementsByName("langage");
+            //Variable pour stocker l'année choisie
+            var langage = "";
+            for (var i = 0; i < radiosLangage.length; i++) {
+              if (radiosLangage[i].checked) {
+                  langage = radiosLangage[i].value;
+              }
+            }
+            
+            //Pour déterminer lesquels des checkbox sont cochés
+            var checkPeripheriques = document.getElementsByName("peripherique");
+            var peripheriquesEntrees = "";
+            for (var i=0; i < checkPeripheriques.length; i++) {
+              if (checkPeripheriques[i].checked) {
+                peripheriquesEntrees += checkPeripheriques[i].value;
+              }
+            }
+            
+            // Pour déterminer l'option sélectionnée à la question 3
+            var systemeExploitation = document.getElementById("selSE").value
+            
+            // Compteur pour le nombre de bonne réponses
+            var bonneReponses = 0
+            
+            // Corriger la première question 
+            var correctionQuestion1
+            if (langage == "Javascript") {
+                correctionQuestion1 = "Bonne réponse !"
+                bonneReponses++
+            } else {
+                correctionQuestion1 = "Mauvaise réponse ! La bonne réponse était Javascript."
+            }
+            
+            // Corriger la deuxième question 
+            var correctionQuestion2
+            var scoreQ2 = 0
+            
+            for (i = 0; i < peripheriquesEntrees.length; i++) {
+              if (peripheriquesEntrees[i] == "1") {
+                scoreQ2 ++
+              } else {
+                scoreQ2 -= 0.5
+              }
+            }
+              
+            // Assurer que le score n'est pas négaitf
+            if (scoreQ2 < 0){
+              scoreQ2 = 0
+            }
+            
+            // Ajouter le score au compteur des bonnes réponses
+            bonneReponses += scoreQ2
+              
+            // Pour le message à afficher
+            if (peripheriquesEntrees == "111") {
+              correctionQuestion2 = "Bonne réponse !"
+            } else if (!(peripheriquesEntrees.includes("1"))) {
+              correctionQuestion2 = "Mauvaise réponse ! Les bonnes réponses étaient souris, microphone et clavier."
+            } else {
+              correctionQuestion2 = "Réponse partielle ! Les bonnes réponses étaient souris, microphone et clavier."
+            }
+            
+            // Corriger la troisième question 
+            var correctionQuestion3
+            if (systemeExploitation == "Notepad ++") {
+                correctionQuestion3 = "Bonne réponse !"
+                bonneReponses++
+            } else {
+                correctionQuestion3 = "Mauvaise réponse ! La bonne réponse était Notepad ++."
+            }
+            
+            // Calculer le pourcentage de bonne réponses
+            var pourcentage = ((bonneReponses / 5) * 100).toFixed(0)
+
+            //Construire la correction à afficher
+            var correction = "<br><br>" + nom + ", vous avez eu " + pourcentage + " % : <br>" 
+            + "<br> <b>Question 1 : </b>" + correctionQuestion1 
+            + "<br> <b>Question 2 : </b>" + correctionQuestion2
+            + "<br> <b>Question 3 : </b>" + correctionQuestion3
+           
+            //Afficher le message sur la page web
+            affiche.innerHTML = correction;
+        }
+    </script>
+  </form>
+</body>
+</html>
